@@ -17,5 +17,5 @@ jobs:
           python-version: '3.11'
       - name: Validate metadata
         run: |
-          pip install solar-registry
+          pip install solar-registry>=0.2.2
           solar-registry validate-json
