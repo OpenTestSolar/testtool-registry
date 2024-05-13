@@ -1,4 +1,40 @@
 {
   "metaVersion": "1",
-  "tools": []
+  "tools": [
+    {
+      "schemaVersion": 1.0,
+      "name": "pytest",
+      "description": "TestSolar Support For Pytest",
+      "version": "0.1.6",
+      "lang": "python",
+      "defaultBaseImage": "python:3.10",
+      "langType": "INTERPRETED",
+      "parameterDefs": [
+        {
+          "name": "workerCount",
+          "value": "并发数",
+          "default": "0"
+        },
+        {
+          "name": "extraArgs",
+          "value": "额外命令行参数",
+          "default": ""
+        },
+        {
+          "name": "timeout",
+          "value": "用例超时时间",
+          "default": "0"
+        },
+        {
+          "name": "enableAllure",
+          "value": "是否用allure生成报告",
+          "default": "false"
+        }
+      ],
+      "homePage": "https://github.com/OpenTestSolar/testtool-python-pytest",
+      "versionFile": "https://raw.githubusercontent.com/OpenTestSolar/testtool-registry/main/testtools/python/pytest/metadata.json",
+      "indexFile": "https://raw.githubusercontent.com/OpenTestSolar/testtool-registry/main/testtools/stable.index.json",
+      "scaffoldRepo": "https://github.com/OpenTestSolar/testtool-scaffold-pytest"
+    }
+  ]
 }
