@@ -108,8 +108,8 @@
           }
         ],
         "homePage": "https://github.com/OpenTestSolar/testtool-python-pytest",
-        "versionFile": "https://raw.githubusercontent.com/OpenTestSolar/testtool-registry/main/testtools/python/pytest/metadata.json",
-        "indexFile": "https://raw.githubusercontent.com/OpenTestSolar/testtool-registry/main/testtools/stable.index.json",
+        "versionFile": "https://opentestsolar.github.io/testtool-registry/testtools/python/pytest/metadata.json",
+        "indexFile": "https://opentestsolar.github.io/testtool-registry/testtools/stable.index.json",
         "scaffoldRepo": "https://github.com/OpenTestSolar/testtool-scaffold-pytest"
       },
       "target": [
@@ -117,37 +117,37 @@
           "os": "linux",
           "arch": "amd64",
           "downloadUrl": "https://github.com/OpenTestSolar/testtool-python-pytest/archive/refs/tags/0.1.6.tar.gz",
-          "sha256": "b994705f3961000471937692d8add317d16ba49595f997b8f49010fd6ade8691"
+          "sha256": "2208221d6dfc481159915536c907aa0062ca05a600de92375c6a854de2ac254b"
         },
         {
           "os": "linux",
           "arch": "arm64",
           "downloadUrl": "https://github.com/OpenTestSolar/testtool-python-pytest/archive/refs/tags/0.1.6.tar.gz",
-          "sha256": "b994705f3961000471937692d8add317d16ba49595f997b8f49010fd6ade8691"
+          "sha256": "2208221d6dfc481159915536c907aa0062ca05a600de92375c6a854de2ac254b"
         },
         {
           "os": "windows",
           "arch": "amd64",
           "downloadUrl": "https://github.com/OpenTestSolar/testtool-python-pytest/archive/refs/tags/0.1.6.tar.gz",
-          "sha256": "b994705f3961000471937692d8add317d16ba49595f997b8f49010fd6ade8691"
+          "sha256": "2208221d6dfc481159915536c907aa0062ca05a600de92375c6a854de2ac254b"
         },
         {
           "os": "windows",
           "arch": "arm64",
           "downloadUrl": "https://github.com/OpenTestSolar/testtool-python-pytest/archive/refs/tags/0.1.6.tar.gz",
-          "sha256": "b994705f3961000471937692d8add317d16ba49595f997b8f49010fd6ade8691"
+          "sha256": "2208221d6dfc481159915536c907aa0062ca05a600de92375c6a854de2ac254b"
         },
         {
           "os": "darwin",
           "arch": "amd64",
           "downloadUrl": "https://github.com/OpenTestSolar/testtool-python-pytest/archive/refs/tags/0.1.6.tar.gz",
-          "sha256": "b994705f3961000471937692d8add317d16ba49595f997b8f49010fd6ade8691"
+          "sha256": "2208221d6dfc481159915536c907aa0062ca05a600de92375c6a854de2ac254b"
         },
         {
           "os": "darwin",
           "arch": "arm64",
           "downloadUrl": "https://github.com/OpenTestSolar/testtool-python-pytest/archive/refs/tags/0.1.6.tar.gz",
-          "sha256": "b994705f3961000471937692d8add317d16ba49595f997b8f49010fd6ade8691"
+          "sha256": "2208221d6dfc481159915536c907aa0062ca05a600de92375c6a854de2ac254b"
         }
       ]
     }
