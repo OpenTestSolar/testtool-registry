@@ -32,8 +32,8 @@
         }
       ],
       "homePage": "https://github.com/OpenTestSolar/testtool-python-pytest",
-      "versionFile": "https://raw.githubusercontent.com/OpenTestSolar/testtool-registry/main/testtools/python/pytest/metadata.json",
-      "indexFile": "https://raw.githubusercontent.com/OpenTestSolar/testtool-registry/main/testtools/stable.index.json",
+      "versionFile": "https://opentestsolar.github.io/testtool-registry/testtools/python/pytest/metadata.json",
+      "indexFile": "https://opentestsolar.github.io/testtool-registry/testtools/stable.index.json",
       "scaffoldRepo": "https://github.com/OpenTestSolar/testtool-scaffold-pytest"
     }
   ]
