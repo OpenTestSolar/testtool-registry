@@ -1,5 +1,65 @@
 {
   "metaVersion": "1",
   "versions": [
+    {
+      "meta": {
+        "schemaVersion": 1.0,
+        "name": "playwright",
+        "description": "TestSolar Support For PlayWright",
+        "version": "0.1.0",
+        "lang": "javascript",
+        "defaultBaseImage": "node:18",
+        "langType": "INTERPRETED",
+        "parameterDefs": [
+          {
+            "name": "extraArgs",
+            "value": "playwright额外参数",
+            "default": ""
+          }
+        ],
+        "homePage": "https://github.com/OpenTestSolar/testtool-javascript-playwright",
+        "versionFile": "https://testsolar-1321258242.cos.ap-guangzhou.myqcloud.com/testtools/javascript/playwright/metadata.json",
+        "indexFile": "https://testsolar-1321258242.cos.ap-guangzhou.myqcloud.com/testtools/stable.index.json",
+        "scaffoldRepo": "https://github.com/OpenTestSolar/testtool-scaffold-playwright"
+      },
+      "target": [
+        {
+          "os": "linux",
+          "arch": "amd64",
+          "downloadUrl": "https://github.com/OpenTestSolar/testtool-javascript-playwright/archive/refs/tags/0.1.0.tar.gz",
+          "sha256": "99d74d72e649b588295ec92b5006179d9edc8a38168fa757636aa4ce4db353a2"
+        },
+        {
+          "os": "linux",
+          "arch": "arm64",
+          "downloadUrl": "https://github.com/OpenTestSolar/testtool-javascript-playwright/archive/refs/tags/0.1.0.tar.gz",
+          "sha256": "99d74d72e649b588295ec92b5006179d9edc8a38168fa757636aa4ce4db353a2"
+        },
+        {
+          "os": "windows",
+          "arch": "amd64",
+          "downloadUrl": "https://github.com/OpenTestSolar/testtool-javascript-playwright/archive/refs/tags/0.1.0.tar.gz",
+          "sha256": "99d74d72e649b588295ec92b5006179d9edc8a38168fa757636aa4ce4db353a2"
+        },
+        {
+          "os": "windows",
+          "arch": "arm64",
+          "downloadUrl": "https://github.com/OpenTestSolar/testtool-javascript-playwright/archive/refs/tags/0.1.0.tar.gz",
+          "sha256": "99d74d72e649b588295ec92b5006179d9edc8a38168fa757636aa4ce4db353a2"
+        },
+        {
+          "os": "darwin",
+          "arch": "amd64",
+          "downloadUrl": "https://github.com/OpenTestSolar/testtool-javascript-playwright/archive/refs/tags/0.1.0.tar.gz",
+          "sha256": "99d74d72e649b588295ec92b5006179d9edc8a38168fa757636aa4ce4db353a2"
+        },
+        {
+          "os": "darwin",
+          "arch": "arm64",
+          "downloadUrl": "https://github.com/OpenTestSolar/testtool-javascript-playwright/archive/refs/tags/0.1.0.tar.gz",
+          "sha256": "99d74d72e649b588295ec92b5006179d9edc8a38168fa757636aa4ce4db353a2"
+        }
+      ]
+    }
   ]
 }
