@@ -35,6 +35,26 @@
       "versionFile": "https://testsolar-1321258242.cos.ap-guangzhou.myqcloud.com/testtools/python/pytest/metadata.json",
       "indexFile": "https://testsolar-1321258242.cos.ap-guangzhou.myqcloud.com/testtools/stable.index.json",
       "scaffoldRepo": "https://github.com/OpenTestSolar/testtool-scaffold-pytest"
+    },
+    {
+      "schemaVersion": 1.0,
+      "name": "playwright",
+      "description": "TestSolar Support For PlayWright",
+      "version": "0.1.0",
+      "lang": "javascript",
+      "defaultBaseImage": "node:18",
+      "langType": "INTERPRETED",
+      "parameterDefs": [
+        {
+          "name": "extraArgs",
+          "value": "playwright额外参数",
+          "default": ""
+        }
+      ],
+      "homePage": "https://github.com/OpenTestSolar/testtool-javascript-playwright",
+      "versionFile": "https://testsolar-1321258242.cos.ap-guangzhou.myqcloud.com/testtools/javascript/playwright/metadata.json",
+      "indexFile": "https://testsolar-1321258242.cos.ap-guangzhou.myqcloud.com/testtools/stable.index.json",
+      "scaffoldRepo": "https://github.com/OpenTestSolar/testtool-scaffold-playwright"
     }
   ]
 }
