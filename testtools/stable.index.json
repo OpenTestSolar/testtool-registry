@@ -4,7 +4,7 @@
     {
       "schemaVersion": 1.0,
       "name": "pytest",
-      "description": "TestSolar Support For Pytest",
+      "description": "pytest是一个成熟的全功能Python测试工具，可以帮助您编写更好的程序。此测试工具允许您在TestSolar上运行pytest。",
       "version": "0.1.6",
       "lang": "python",
       "defaultBaseImage": "python:3.10",
@@ -34,7 +34,20 @@
       "homePage": "https://github.com/OpenTestSolar/testtool-python-pytest",
       "versionFile": "https://testsolar-1321258242.cos.ap-guangzhou.myqcloud.com/testtools/python/pytest/metadata.json",
       "indexFile": "https://testsolar-1321258242.cos.ap-guangzhou.myqcloud.com/testtools/stable.index.json",
-      "scaffoldRepo": "https://github.com/OpenTestSolar/testtool-scaffold-pytest"
+      "scaffoldRepo": "https://github.com/OpenTestSolar/testtool-scaffold-pytest",
+      "supportOS": [
+        "windows",
+        "linux",
+        "darwin"
+      ],
+      "supportArch": [
+        "amd64",
+        "arm64"
+      ],
+      "entry": {
+        "load": "python3 /testtools/pytest/src/load.py $1",
+        "run": "python3 /testtools/pytest/src/run.py $1"
+      }
     },
     {
       "schemaVersion": 1.0,

@@ -80,7 +80,7 @@
       "meta": {
         "schemaVersion": 1.0,
         "name": "pytest",
-        "description": "TestSolar Support For Pytest",
+        "description": "pytest是一个成熟的全功能Python测试工具，可以帮助您编写更好的程序。此测试工具允许您在TestSolar上运行pytest。",
         "version": "0.1.6",
         "lang": "python",
         "defaultBaseImage": "python:3.10",
@@ -110,44 +110,145 @@
         "homePage": "https://github.com/OpenTestSolar/testtool-python-pytest",
         "versionFile": "https://testsolar-1321258242.cos.ap-guangzhou.myqcloud.com/testtools/python/pytest/metadata.json",
         "indexFile": "https://testsolar-1321258242.cos.ap-guangzhou.myqcloud.com/testtools/stable.index.json",
-        "scaffoldRepo": "https://github.com/OpenTestSolar/testtool-scaffold-pytest"
+        "scaffoldRepo": "https://github.com/OpenTestSolar/testtool-scaffold-pytest",
+        "supportOS": [
+          "windows",
+          "linux",
+          "darwin"
+        ],
+        "supportArch": [
+          "amd64",
+          "arm64"
+        ],
+        "entry": {
+          "load": "python3 /testtools/pytest/src/load.py $1",
+          "run": "python3 /testtools/pytest/src/run.py $1"
+        }
       },
       "target": [
         {
-          "os": "linux",
-          "arch": "amd64",
-          "downloadUrl": "https://github.com/OpenTestSolar/testtool-python-pytest/archive/refs/tags/0.1.6.tar.gz",
-          "sha256": "e178011072932cf9ae285b5296615845973d323a641607ebc81c2ecfbb61374f"
-        },
-        {
-          "os": "linux",
-          "arch": "arm64",
-          "downloadUrl": "https://github.com/OpenTestSolar/testtool-python-pytest/archive/refs/tags/0.1.6.tar.gz",
-          "sha256": "e178011072932cf9ae285b5296615845973d323a641607ebc81c2ecfbb61374f"
-        },
-        {
           "os": "windows",
           "arch": "amd64",
           "downloadUrl": "https://github.com/OpenTestSolar/testtool-python-pytest/archive/refs/tags/0.1.6.tar.gz",
-          "sha256": "e178011072932cf9ae285b5296615845973d323a641607ebc81c2ecfbb61374f"
+          "sha256": "71f8d877a0d6d2f1ee7fa41ebc441065223c693ed371225c5c73412abc9c3020"
         },
         {
           "os": "windows",
           "arch": "arm64",
           "downloadUrl": "https://github.com/OpenTestSolar/testtool-python-pytest/archive/refs/tags/0.1.6.tar.gz",
-          "sha256": "e178011072932cf9ae285b5296615845973d323a641607ebc81c2ecfbb61374f"
+          "sha256": "71f8d877a0d6d2f1ee7fa41ebc441065223c693ed371225c5c73412abc9c3020"
+        },
+        {
+          "os": "linux",
+          "arch": "amd64",
+          "downloadUrl": "https://github.com/OpenTestSolar/testtool-python-pytest/archive/refs/tags/0.1.6.tar.gz",
+          "sha256": "71f8d877a0d6d2f1ee7fa41ebc441065223c693ed371225c5c73412abc9c3020"
+        },
+        {
+          "os": "linux",
+          "arch": "arm64",
+          "downloadUrl": "https://github.com/OpenTestSolar/testtool-python-pytest/archive/refs/tags/0.1.6.tar.gz",
+          "sha256": "71f8d877a0d6d2f1ee7fa41ebc441065223c693ed371225c5c73412abc9c3020"
         },
         {
           "os": "darwin",
           "arch": "amd64",
           "downloadUrl": "https://github.com/OpenTestSolar/testtool-python-pytest/archive/refs/tags/0.1.6.tar.gz",
-          "sha256": "e178011072932cf9ae285b5296615845973d323a641607ebc81c2ecfbb61374f"
+          "sha256": "71f8d877a0d6d2f1ee7fa41ebc441065223c693ed371225c5c73412abc9c3020"
         },
         {
           "os": "darwin",
           "arch": "arm64",
           "downloadUrl": "https://github.com/OpenTestSolar/testtool-python-pytest/archive/refs/tags/0.1.6.tar.gz",
-          "sha256": "e178011072932cf9ae285b5296615845973d323a641607ebc81c2ecfbb61374f"
+          "sha256": "71f8d877a0d6d2f1ee7fa41ebc441065223c693ed371225c5c73412abc9c3020"
+        }
+      ]
+    },
+    {
+      "meta": {
+        "schemaVersion": 1.0,
+        "name": "pytest",
+        "description": "pytest是一个成熟的全功能Python测试工具，可以帮助您编写更好的程序。此测试工具允许您在TestSolar上运行pytest。",
+        "version": "stable",
+        "lang": "python",
+        "defaultBaseImage": "python:3.10",
+        "langType": "INTERPRETED",
+        "parameterDefs": [
+          {
+            "name": "workerCount",
+            "value": "并发数",
+            "default": "0"
+          },
+          {
+            "name": "extraArgs",
+            "value": "额外命令行参数",
+            "default": ""
+          },
+          {
+            "name": "timeout",
+            "value": "用例超时时间",
+            "default": "0"
+          },
+          {
+            "name": "enableAllure",
+            "value": "是否用allure生成报告",
+            "default": "false"
+          }
+        ],
+        "homePage": "https://github.com/OpenTestSolar/testtool-python-pytest",
+        "versionFile": "https://testsolar-1321258242.cos.ap-guangzhou.myqcloud.com/testtools/python/pytest/metadata.json",
+        "indexFile": "https://testsolar-1321258242.cos.ap-guangzhou.myqcloud.com/testtools/stable.index.json",
+        "scaffoldRepo": "https://github.com/OpenTestSolar/testtool-scaffold-pytest",
+        "supportOS": [
+          "windows",
+          "linux",
+          "darwin"
+        ],
+        "supportArch": [
+          "amd64",
+          "arm64"
+        ],
+        "entry": {
+          "load": "python3 /testtools/pytest/src/load.py $1",
+          "run": "python3 /testtools/pytest/src/run.py $1"
+        }
+      },
+      "target": [
+        {
+          "os": "windows",
+          "arch": "amd64",
+          "downloadUrl": "https://github.com/OpenTestSolar/testtool-python-pytest/archive/refs/tags/0.1.6.tar.gz",
+          "sha256": "71f8d877a0d6d2f1ee7fa41ebc441065223c693ed371225c5c73412abc9c3020"
+        },
+        {
+          "os": "windows",
+          "arch": "arm64",
+          "downloadUrl": "https://github.com/OpenTestSolar/testtool-python-pytest/archive/refs/tags/0.1.6.tar.gz",
+          "sha256": "71f8d877a0d6d2f1ee7fa41ebc441065223c693ed371225c5c73412abc9c3020"
+        },
+        {
+          "os": "linux",
+          "arch": "amd64",
+          "downloadUrl": "https://github.com/OpenTestSolar/testtool-python-pytest/archive/refs/tags/0.1.6.tar.gz",
+          "sha256": "71f8d877a0d6d2f1ee7fa41ebc441065223c693ed371225c5c73412abc9c3020"
+        },
+        {
+          "os": "linux",
+          "arch": "arm64",
+          "downloadUrl": "https://github.com/OpenTestSolar/testtool-python-pytest/archive/refs/tags/0.1.6.tar.gz",
+          "sha256": "71f8d877a0d6d2f1ee7fa41ebc441065223c693ed371225c5c73412abc9c3020"
+        },
+        {
+          "os": "darwin",
+          "arch": "amd64",
+          "downloadUrl": "https://github.com/OpenTestSolar/testtool-python-pytest/archive/refs/tags/0.1.6.tar.gz",
+          "sha256": "71f8d877a0d6d2f1ee7fa41ebc441065223c693ed371225c5c73412abc9c3020"
+        },
+        {
+          "os": "darwin",
+          "arch": "arm64",
+          "downloadUrl": "https://github.com/OpenTestSolar/testtool-python-pytest/archive/refs/tags/0.1.6.tar.gz",
+          "sha256": "71f8d877a0d6d2f1ee7fa41ebc441065223c693ed371225c5c73412abc9c3020"
         }
       ]
     }
