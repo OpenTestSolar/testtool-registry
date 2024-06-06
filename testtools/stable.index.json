@@ -4,6 +4,7 @@
     {
       "schemaVersion": 1.0,
       "name": "pytest",
+      "legacyName": "",
       "description": "pytest是一个成熟的全功能Python测试工具，可以帮助您编写更好的程序。此测试工具允许您在TestSolar上运行pytest。",
       "version": "0.1.6",
       "lang": "python",
@@ -13,21 +14,25 @@
         {
           "name": "workerCount",
           "value": "并发数",
+          "desc": "",
           "default": "0"
         },
         {
           "name": "extraArgs",
           "value": "额外命令行参数",
+          "desc": "",
           "default": ""
         },
         {
           "name": "timeout",
           "value": "用例超时时间",
+          "desc": "",
           "default": "0"
         },
         {
           "name": "enableAllure",
           "value": "是否用allure生成报告",
+          "desc": "",
           "default": "false"
         }
       ],
@@ -47,12 +52,16 @@
       "entry": {
         "load": "python3 /testtools/pytest/src/load.py $1",
         "run": "python3 /testtools/pytest/src/run.py $1"
-      }
+      },
+      "gitPkgUrl": "",
+      "nameZh": "",
+      "certified": false
     },
     {
       "schemaVersion": 1.0,
       "name": "playwright",
-      "description": "TestSolar Support For PlayWright",
+      "legacyName": "",
+      "description": "TestSolar Support For playwright",
       "version": "0.1.0",
       "lang": "javascript",
       "defaultBaseImage": "node:18",
@@ -61,13 +70,31 @@
         {
           "name": "extraArgs",
           "value": "playwright额外参数",
-          "default": ""
+          "desc": "playwright命令行额外参数",
+          "default": "",
+          "inputWidget": "text"
         }
       ],
       "homePage": "https://github.com/OpenTestSolar/testtool-javascript-playwright",
       "versionFile": "https://testsolar-1321258242.cos.ap-guangzhou.myqcloud.com/testtools/javascript/playwright/metadata.json",
       "indexFile": "https://testsolar-1321258242.cos.ap-guangzhou.myqcloud.com/testtools/stable.index.json",
-      "scaffoldRepo": "https://github.com/OpenTestSolar/testtool-scaffold-playwright"
+      "scaffoldRepo": "https://github.com/OpenTestSolar/testtool-scaffold-playwright",
+      "supportOS": [
+        "windows",
+        "linux",
+        "darwin"
+      ],
+      "supportArch": [
+        "amd64",
+        "arm64"
+      ],
+      "entry": {
+        "load": "node /testtools/playwright/src/load.js $1",
+        "run": "node /testtools/playwright/src/run.js $1"
+      },
+      "gitPkgUrl": "https://github.com/OpenTestSolar/testtool-javascript-playwright.git",
+      "nameZh": "Playwright自动化测试",
+      "certified": false
     }
   ]
 }
