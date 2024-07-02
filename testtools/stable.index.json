@@ -4,8 +4,9 @@
     {
       "schemaVersion": 1.0,
       "name": "pytest",
+      "legacyName": "",
       "description": "pytest是一个成熟的全功能Python测试工具，可以帮助您编写更好的程序。此测试工具允许您在TestSolar上运行pytest。",
-      "version": "0.1.6",
+      "version": "0.1.9",
       "lang": "python",
       "defaultBaseImage": "python:3.10",
       "langType": "INTERPRETED",
@@ -13,22 +14,30 @@
         {
           "name": "workerCount",
           "value": "并发数",
-          "default": "0"
+          "desc": "用例并发数量",
+          "default": "0",
+          "inputWidget": "text"
         },
         {
           "name": "extraArgs",
           "value": "额外命令行参数",
-          "default": ""
+          "desc": "额外命令行参数",
+          "default": "",
+          "inputWidget": "text"
         },
         {
           "name": "timeout",
           "value": "用例超时时间",
-          "default": "0"
+          "desc": "用例超时时间，单位秒",
+          "default": "0",
+          "inputWidget": "text"
         },
         {
           "name": "enableAllure",
           "value": "是否用allure生成报告",
-          "default": "false"
+          "desc": "是否用allure生成报告",
+          "default": "false",
+          "inputWidget": "text"
         }
       ],
       "homePage": "https://github.com/OpenTestSolar/testtool-python-pytest",
@@ -47,11 +56,17 @@
       "entry": {
         "load": "python3 /testtools/pytest/src/load.py $1",
         "run": "python3 /testtools/pytest/src/run.py $1"
-      }
+      },
+      "gitPkgUrl": "https://github.com/OpenTestSolar/testtool-python-pytest.git",
+      "nameZh": "pytest自动化测试",
+      "certified": false,
+      "archived": false,
+      "testCatalog": "unit"
     },
     {
       "schemaVersion": 1.0,
       "name": "playwright",
+      "legacyName": "",
       "description": "TestSolar Support For PlayWright",
       "version": "0.1.0",
       "lang": "javascript",
@@ -61,13 +76,19 @@
         {
           "name": "extraArgs",
           "value": "playwright额外参数",
+          "desc": "",
           "default": ""
         }
       ],
       "homePage": "https://github.com/OpenTestSolar/testtool-javascript-playwright",
       "versionFile": "https://testsolar-1321258242.cos.ap-guangzhou.myqcloud.com/testtools/javascript/playwright/metadata.json",
       "indexFile": "https://testsolar-1321258242.cos.ap-guangzhou.myqcloud.com/testtools/stable.index.json",
-      "scaffoldRepo": "https://github.com/OpenTestSolar/testtool-scaffold-playwright"
+      "scaffoldRepo": "https://github.com/OpenTestSolar/testtool-scaffold-playwright",
+      "gitPkgUrl": "",
+      "nameZh": "",
+      "certified": false,
+      "archived": false,
+      "testCatalog": "unit"
     }
   ]
 }
