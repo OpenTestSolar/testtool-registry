@@ -70,10 +70,10 @@
     {
       "schemaVersion": 1.0,
       "name": "playwright",
-      "nameZh": "",
+      "nameZh": "Playwright自动化测试",
       "legacyName": "",
-      "description": "TestSolar Support For PlayWright",
-      "version": "0.1.0",
+      "description": "TestSolar Support For playwright",
+      "version": "0.2.0",
       "lang": "javascript",
       "defaultBaseImage": "node:18",
       "langType": "INTERPRETED",
@@ -81,14 +81,31 @@
         {
           "name": "extraArgs",
           "value": "playwright额外参数",
-          "desc": "",
-          "default": ""
+          "desc": "playwright命令行额外参数",
+          "default": "",
+          "inputWidget": "text"
         }
       ],
       "homePage": "https://github.com/OpenTestSolar/testtool-javascript-playwright",
       "versionFile": "https://testsolar-1321258242.cos.ap-guangzhou.myqcloud.com/testtools/javascript/playwright/metadata.json",
       "indexFile": "https://testsolar-1321258242.cos.ap-guangzhou.myqcloud.com/testtools/stable.index.json",
       "scaffoldRepo": "https://github.com/OpenTestSolar/testtool-scaffold-playwright",
+      "supportOS": [
+        "windows",
+        "linux",
+        "darwin"
+      ],
+      "supportArch": [
+        "amd64",
+        "arm64"
+      ],
+      "entry": {
+        "load": "node /testtools/playwright/src/load.js $1",
+        "run": "node /testtools/playwright/src/run.js $1"
+      },
+      "repository": "https://github.com/OpenTestSolar/testtool-javascript-playwright/tree/main/playwright",
+      "gitPkgUrl": "https://github.com/OpenTestSolar/testtool-javascript-playwright.git",
+      "httpPkgUrl": "https://testsolar-1321258242.cos.ap-guangzhou.myqcloud.com/testtools/javascript/playwright/metadata.json@stable",
       "certified": false,
       "testCatalog": "unit"
     }
