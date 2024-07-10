@@ -1,5 +1,169 @@
 {
   "metaVersion": "1",
   "versions": [
+    {
+      "meta": {
+        "schemaVersion": 1.0,
+        "name": "jest",
+        "nameZh": "Jest自动化测试",
+        "legacyName": "",
+        "description": "TestSolar Support For Jest",
+        "version": "0.2.0",
+        "lang": "javascript",
+        "defaultBaseImage": "node:18",
+        "langType": "INTERPRETED",
+        "parameterDefs": [
+          {
+            "name": "extraArgs",
+            "value": "jest额外参数",
+            "desc": "jest命令行额外参数",
+            "default": "",
+            "inputWidget": "text"
+          }
+        ],
+        "homePage": "https://github.com/OpenTestSolar/testtool-javascript-jest",
+        "versionFile": "https://testsolar-1321258242.cos.ap-guangzhou.myqcloud.com/testtools/javascript/jest/metadata.json",
+        "indexFile": "https://testsolar-1321258242.cos.ap-guangzhou.myqcloud.com/testtools/stable.index.json",
+        "scaffoldRepo": "https://github.com/OpenTestSolar/testtool-scaffold-jest",
+        "supportOS": [
+          "windows",
+          "linux",
+          "darwin"
+        ],
+        "supportArch": [
+          "amd64",
+          "arm64"
+        ],
+        "entry": {
+          "load": "node /testtools/jest/src/load.js $1",
+          "run": "node /testtools/jest/src/run.js $1"
+        },
+        "repository": "https://github.com/OpenTestSolar/testtool-javascript-jest/tree/main/jest",
+        "gitPkgUrl": "https://github.com/OpenTestSolar/testtool-javascript-jest.git",
+        "httpPkgUrl": "https://testsolar-1321258242.cos.ap-guangzhou.myqcloud.com/testtools/javascript/jest/metadata.json@stable",
+        "certified": false,
+        "testCatalog": "unit"
+      },
+      "target": [
+        {
+          "os": "windows",
+          "arch": "amd64",
+          "downloadUrl": "https://github.com/OpenTestSolar/testtool-javascript-jest/archive/refs/tags/0.2.0.tar.gz",
+          "sha256": "b9ac9b25630ac998fbe56f6c0dde01be5f38440e9211662182c486b5457266c6"
+        },
+        {
+          "os": "windows",
+          "arch": "arm64",
+          "downloadUrl": "https://github.com/OpenTestSolar/testtool-javascript-jest/archive/refs/tags/0.2.0.tar.gz",
+          "sha256": "b9ac9b25630ac998fbe56f6c0dde01be5f38440e9211662182c486b5457266c6"
+        },
+        {
+          "os": "linux",
+          "arch": "amd64",
+          "downloadUrl": "https://github.com/OpenTestSolar/testtool-javascript-jest/archive/refs/tags/0.2.0.tar.gz",
+          "sha256": "b9ac9b25630ac998fbe56f6c0dde01be5f38440e9211662182c486b5457266c6"
+        },
+        {
+          "os": "linux",
+          "arch": "arm64",
+          "downloadUrl": "https://github.com/OpenTestSolar/testtool-javascript-jest/archive/refs/tags/0.2.0.tar.gz",
+          "sha256": "b9ac9b25630ac998fbe56f6c0dde01be5f38440e9211662182c486b5457266c6"
+        },
+        {
+          "os": "darwin",
+          "arch": "amd64",
+          "downloadUrl": "https://github.com/OpenTestSolar/testtool-javascript-jest/archive/refs/tags/0.2.0.tar.gz",
+          "sha256": "b9ac9b25630ac998fbe56f6c0dde01be5f38440e9211662182c486b5457266c6"
+        },
+        {
+          "os": "darwin",
+          "arch": "arm64",
+          "downloadUrl": "https://github.com/OpenTestSolar/testtool-javascript-jest/archive/refs/tags/0.2.0.tar.gz",
+          "sha256": "b9ac9b25630ac998fbe56f6c0dde01be5f38440e9211662182c486b5457266c6"
+        }
+      ]
+    },
+    {
+      "meta": {
+        "schemaVersion": 1.0,
+        "name": "jest",
+        "nameZh": "Jest自动化测试",
+        "legacyName": "",
+        "description": "TestSolar Support For Jest",
+        "version": "stable",
+        "lang": "javascript",
+        "defaultBaseImage": "node:18",
+        "langType": "INTERPRETED",
+        "parameterDefs": [
+          {
+            "name": "extraArgs",
+            "value": "jest额外参数",
+            "desc": "jest命令行额外参数",
+            "default": "",
+            "inputWidget": "text"
+          }
+        ],
+        "homePage": "https://github.com/OpenTestSolar/testtool-javascript-jest",
+        "versionFile": "https://testsolar-1321258242.cos.ap-guangzhou.myqcloud.com/testtools/javascript/jest/metadata.json",
+        "indexFile": "https://testsolar-1321258242.cos.ap-guangzhou.myqcloud.com/testtools/stable.index.json",
+        "scaffoldRepo": "https://github.com/OpenTestSolar/testtool-scaffold-jest",
+        "supportOS": [
+          "windows",
+          "linux",
+          "darwin"
+        ],
+        "supportArch": [
+          "amd64",
+          "arm64"
+        ],
+        "entry": {
+          "load": "node /testtools/jest/src/load.js $1",
+          "run": "node /testtools/jest/src/run.js $1"
+        },
+        "repository": "https://github.com/OpenTestSolar/testtool-javascript-jest/tree/main/jest",
+        "gitPkgUrl": "https://github.com/OpenTestSolar/testtool-javascript-jest.git",
+        "httpPkgUrl": "https://testsolar-1321258242.cos.ap-guangzhou.myqcloud.com/testtools/javascript/jest/metadata.json@stable",
+        "certified": false,
+        "testCatalog": "unit"
+      },
+      "target": [
+        {
+          "os": "windows",
+          "arch": "amd64",
+          "downloadUrl": "https://github.com/OpenTestSolar/testtool-javascript-jest/archive/refs/tags/0.2.0.tar.gz",
+          "sha256": "b9ac9b25630ac998fbe56f6c0dde01be5f38440e9211662182c486b5457266c6"
+        },
+        {
+          "os": "windows",
+          "arch": "arm64",
+          "downloadUrl": "https://github.com/OpenTestSolar/testtool-javascript-jest/archive/refs/tags/0.2.0.tar.gz",
+          "sha256": "b9ac9b25630ac998fbe56f6c0dde01be5f38440e9211662182c486b5457266c6"
+        },
+        {
+          "os": "linux",
+          "arch": "amd64",
+          "downloadUrl": "https://github.com/OpenTestSolar/testtool-javascript-jest/archive/refs/tags/0.2.0.tar.gz",
+          "sha256": "b9ac9b25630ac998fbe56f6c0dde01be5f38440e9211662182c486b5457266c6"
+        },
+        {
+          "os": "linux",
+          "arch": "arm64",
+          "downloadUrl": "https://github.com/OpenTestSolar/testtool-javascript-jest/archive/refs/tags/0.2.0.tar.gz",
+          "sha256": "b9ac9b25630ac998fbe56f6c0dde01be5f38440e9211662182c486b5457266c6"
+        },
+        {
+          "os": "darwin",
+          "arch": "amd64",
+          "downloadUrl": "https://github.com/OpenTestSolar/testtool-javascript-jest/archive/refs/tags/0.2.0.tar.gz",
+          "sha256": "b9ac9b25630ac998fbe56f6c0dde01be5f38440e9211662182c486b5457266c6"
+        },
+        {
+          "os": "darwin",
+          "arch": "arm64",
+          "downloadUrl": "https://github.com/OpenTestSolar/testtool-javascript-jest/archive/refs/tags/0.2.0.tar.gz",
+          "sha256": "b9ac9b25630ac998fbe56f6c0dde01be5f38440e9211662182c486b5457266c6"
+        }
+      ]
+    }
   ]
 }
