@@ -150,6 +150,39 @@
       "httpPkgUrl": "https://testsolar-1321258242.cos.ap-guangzhou.myqcloud.com/testtools/javascript/jest/metadata.json@stable",
       "certified": false,
       "testCatalog": "unit"
+    },
+    {
+      "schemaVersion": 1.0,
+      "name": "gotest",
+      "nameZh": "Gotest自动化测试工具",
+      "legacyName": "",
+      "description": "Gotest自动化测试工具",
+      "version": "0.2.0",
+      "lang": "golang",
+      "defaultBaseImage": "golang:1.22",
+      "langType": "COMPILED",
+      "homePage": "https://github.com/OpenTestSolar/testtool-golang-gotest",
+      "versionFile": "https://testsolar-1321258242.cos.ap-guangzhou.myqcloud.com/testtools/golang/gotest/metadata.json",
+      "indexFile": "https://testsolar-1321258242.cos.ap-guangzhou.myqcloud.com/testtools/stable.index.json",
+      "scaffoldRepo": "https://github.com/OpenTestSolar/testtool-scaffold-gotest",
+      "supportOS": [
+        "windows",
+        "linux",
+        "darwin"
+      ],
+      "supportArch": [
+        "amd64",
+        "arm64"
+      ],
+      "entry": {
+        "load": "solar-gotest discover -p $1",
+        "run": "solar-gotest execute -p $1"
+      },
+      "repository": "https://github.com/OpenTestSolar/testtool-golang-gotest",
+      "gitPkgUrl": "github.com/OpenTestSolar/testtool-golang-gotest@master:gotest",
+      "httpPkgUrl": "https://testsolar-1321258242.cos.ap-guangzhou.myqcloud.com/testtools/golang/gotest/metadata.json@stable",
+      "certified": false,
+      "testCatalog": "unit"
     }
   ]
 }
