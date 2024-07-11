@@ -1,5 +1,353 @@
 {
   "metaVersion": "1",
   "versions": [
+    {
+      "meta": {
+        "schemaVersion": 1.0,
+        "name": "ginkgo",
+        "nameZh": "Ginkgo自动化测试工具",
+        "legacyName": "",
+        "description": "Ginkgo自动化测试工具",
+        "version": "0.2.0",
+        "lang": "golang",
+        "defaultBaseImage": "golang:1.22",
+        "langType": "COMPILED",
+        "parameterDefs": [
+          {
+            "name": "workerCount",
+            "value": "并发数",
+            "desc": "并发数",
+            "default": "0",
+            "inputWidget": "number"
+          },
+          {
+            "name": "parseMode",
+            "value": "加载用例的模式",
+            "desc": "加载用例的模式",
+            "default": "ast",
+            "inputWidget": "text"
+          },
+          {
+            "name": "showSetup",
+            "value": "上报测试套Before/After",
+            "desc": "将测试套的before suite以及after suite作为测试用例上报",
+            "default": "false",
+            "choices": [
+              {
+                "value": "true",
+                "desc": "是"
+              },
+              {
+                "value": "false",
+                "desc": "否"
+              }
+            ],
+            "inputWidget": "choices"
+          },
+          {
+            "name": "withLabels",
+            "value": "用例中是否包含标签",
+            "desc": "用例中是否包含标签",
+            "default": "false",
+            "choices": [
+              {
+                "value": "true",
+                "desc": "是"
+              },
+              {
+                "value": "false",
+                "desc": "否"
+              }
+            ],
+            "inputWidget": "choices"
+          },
+          {
+            "name": "splitBySpace",
+            "value": "上报用例名是否以空格分割",
+            "desc": "上报用例名是否以空格分割",
+            "default": "false",
+            "choices": [
+              {
+                "value": "true",
+                "desc": "是"
+              },
+              {
+                "value": "false",
+                "desc": "否"
+              }
+            ],
+            "inputWidget": "choices"
+          },
+          {
+            "name": "concurrentBuild",
+            "value": "并发编译",
+            "desc": "是否并发编译生成二进制可执行文件",
+            "default": "false",
+            "choices": [
+              {
+                "value": "true",
+                "desc": "是"
+              },
+              {
+                "value": "false",
+                "desc": "否"
+              }
+            ],
+            "inputWidget": "choices"
+          },
+          {
+            "name": "compressBinary",
+            "value": "是否压缩编译后生成的二进制文件",
+            "desc": "是否压缩编译后生成的二进制文件，镜像中需要包含`upx`工具",
+            "default": "false",
+            "choices": [
+              {
+                "value": "true",
+                "desc": "是"
+              },
+              {
+                "value": "false",
+                "desc": "否"
+              }
+            ],
+            "inputWidget": "choices"
+          }
+        ],
+        "homePage": "https://github.com/OpenTestSolar/testtool-golang-ginkgo",
+        "versionFile": "https://testsolar-1321258242.cos.ap-guangzhou.myqcloud.com/testtools/golang/ginkgo/metadata.json",
+        "indexFile": "https://testsolar-1321258242.cos.ap-guangzhou.myqcloud.com/testtools/stable.index.json",
+        "scaffoldRepo": "https://github.com/OpenTestSolar/testtool-scaffold-ginkgo",
+        "supportOS": [
+          "windows",
+          "linux",
+          "darwin"
+        ],
+        "supportArch": [
+          "amd64",
+          "arm64"
+        ],
+        "entry": {
+          "load": "solar-ginkgo discover -p $1",
+          "run": "solar-ginkgo execute -p $1"
+        },
+        "repository": "https://github.com/OpenTestSolar/testtool-golang-ginkgo",
+        "gitPkgUrl": "github.com/OpenTestSolar/testtool-golang-ginkgo@master:ginkgo",
+        "httpPkgUrl": "https://testsolar-1321258242.cos.ap-guangzhou.myqcloud.com/testtools/golang/ginkgo/metadata.json@stable",
+        "certified": false,
+        "testCatalog": "unit"
+      },
+      "target": [
+        {
+          "os": "windows",
+          "arch": "amd64",
+          "downloadUrl": "https://github.com/OpenTestSolar/testtool-golang-ginkgo/archive/refs/tags/0.2.0.tar.gz",
+          "sha256": "c3350ad9dec59196fab707ff8660e4f5befe3fe7686ddc517dbdb971fca600b0"
+        },
+        {
+          "os": "windows",
+          "arch": "arm64",
+          "downloadUrl": "https://github.com/OpenTestSolar/testtool-golang-ginkgo/archive/refs/tags/0.2.0.tar.gz",
+          "sha256": "c3350ad9dec59196fab707ff8660e4f5befe3fe7686ddc517dbdb971fca600b0"
+        },
+        {
+          "os": "linux",
+          "arch": "amd64",
+          "downloadUrl": "https://github.com/OpenTestSolar/testtool-golang-ginkgo/archive/refs/tags/0.2.0.tar.gz",
+          "sha256": "c3350ad9dec59196fab707ff8660e4f5befe3fe7686ddc517dbdb971fca600b0"
+        },
+        {
+          "os": "linux",
+          "arch": "arm64",
+          "downloadUrl": "https://github.com/OpenTestSolar/testtool-golang-ginkgo/archive/refs/tags/0.2.0.tar.gz",
+          "sha256": "c3350ad9dec59196fab707ff8660e4f5befe3fe7686ddc517dbdb971fca600b0"
+        },
+        {
+          "os": "darwin",
+          "arch": "amd64",
+          "downloadUrl": "https://github.com/OpenTestSolar/testtool-golang-ginkgo/archive/refs/tags/0.2.0.tar.gz",
+          "sha256": "c3350ad9dec59196fab707ff8660e4f5befe3fe7686ddc517dbdb971fca600b0"
+        },
+        {
+          "os": "darwin",
+          "arch": "arm64",
+          "downloadUrl": "https://github.com/OpenTestSolar/testtool-golang-ginkgo/archive/refs/tags/0.2.0.tar.gz",
+          "sha256": "c3350ad9dec59196fab707ff8660e4f5befe3fe7686ddc517dbdb971fca600b0"
+        }
+      ]
+    },
+    {
+      "meta": {
+        "schemaVersion": 1.0,
+        "name": "ginkgo",
+        "nameZh": "Ginkgo自动化测试工具",
+        "legacyName": "",
+        "description": "Ginkgo自动化测试工具",
+        "version": "stable",
+        "lang": "golang",
+        "defaultBaseImage": "golang:1.22",
+        "langType": "COMPILED",
+        "parameterDefs": [
+          {
+            "name": "workerCount",
+            "value": "并发数",
+            "desc": "并发数",
+            "default": "0",
+            "inputWidget": "number"
+          },
+          {
+            "name": "parseMode",
+            "value": "加载用例的模式",
+            "desc": "加载用例的模式",
+            "default": "ast",
+            "inputWidget": "text"
+          },
+          {
+            "name": "showSetup",
+            "value": "上报测试套Before/After",
+            "desc": "将测试套的before suite以及after suite作为测试用例上报",
+            "default": "false",
+            "choices": [
+              {
+                "value": "true",
+                "desc": "是"
+              },
+              {
+                "value": "false",
+                "desc": "否"
+              }
+            ],
+            "inputWidget": "choices"
+          },
+          {
+            "name": "withLabels",
+            "value": "用例中是否包含标签",
+            "desc": "用例中是否包含标签",
+            "default": "false",
+            "choices": [
+              {
+                "value": "true",
+                "desc": "是"
+              },
+              {
+                "value": "false",
+                "desc": "否"
+              }
+            ],
+            "inputWidget": "choices"
+          },
+          {
+            "name": "splitBySpace",
+            "value": "上报用例名是否以空格分割",
+            "desc": "上报用例名是否以空格分割",
+            "default": "false",
+            "choices": [
+              {
+                "value": "true",
+                "desc": "是"
+              },
+              {
+                "value": "false",
+                "desc": "否"
+              }
+            ],
+            "inputWidget": "choices"
+          },
+          {
+            "name": "concurrentBuild",
+            "value": "并发编译",
+            "desc": "是否并发编译生成二进制可执行文件",
+            "default": "false",
+            "choices": [
+              {
+                "value": "true",
+                "desc": "是"
+              },
+              {
+                "value": "false",
+                "desc": "否"
+              }
+            ],
+            "inputWidget": "choices"
+          },
+          {
+            "name": "compressBinary",
+            "value": "是否压缩编译后生成的二进制文件",
+            "desc": "是否压缩编译后生成的二进制文件，镜像中需要包含`upx`工具",
+            "default": "false",
+            "choices": [
+              {
+                "value": "true",
+                "desc": "是"
+              },
+              {
+                "value": "false",
+                "desc": "否"
+              }
+            ],
+            "inputWidget": "choices"
+          }
+        ],
+        "homePage": "https://github.com/OpenTestSolar/testtool-golang-ginkgo",
+        "versionFile": "https://testsolar-1321258242.cos.ap-guangzhou.myqcloud.com/testtools/golang/ginkgo/metadata.json",
+        "indexFile": "https://testsolar-1321258242.cos.ap-guangzhou.myqcloud.com/testtools/stable.index.json",
+        "scaffoldRepo": "https://github.com/OpenTestSolar/testtool-scaffold-ginkgo",
+        "supportOS": [
+          "windows",
+          "linux",
+          "darwin"
+        ],
+        "supportArch": [
+          "amd64",
+          "arm64"
+        ],
+        "entry": {
+          "load": "solar-ginkgo discover -p $1",
+          "run": "solar-ginkgo execute -p $1"
+        },
+        "repository": "https://github.com/OpenTestSolar/testtool-golang-ginkgo",
+        "gitPkgUrl": "github.com/OpenTestSolar/testtool-golang-ginkgo@master:ginkgo",
+        "httpPkgUrl": "https://testsolar-1321258242.cos.ap-guangzhou.myqcloud.com/testtools/golang/ginkgo/metadata.json@stable",
+        "certified": false,
+        "testCatalog": "unit"
+      },
+      "target": [
+        {
+          "os": "windows",
+          "arch": "amd64",
+          "downloadUrl": "https://github.com/OpenTestSolar/testtool-golang-ginkgo/archive/refs/tags/0.2.0.tar.gz",
+          "sha256": "c3350ad9dec59196fab707ff8660e4f5befe3fe7686ddc517dbdb971fca600b0"
+        },
+        {
+          "os": "windows",
+          "arch": "arm64",
+          "downloadUrl": "https://github.com/OpenTestSolar/testtool-golang-ginkgo/archive/refs/tags/0.2.0.tar.gz",
+          "sha256": "c3350ad9dec59196fab707ff8660e4f5befe3fe7686ddc517dbdb971fca600b0"
+        },
+        {
+          "os": "linux",
+          "arch": "amd64",
+          "downloadUrl": "https://github.com/OpenTestSolar/testtool-golang-ginkgo/archive/refs/tags/0.2.0.tar.gz",
+          "sha256": "c3350ad9dec59196fab707ff8660e4f5befe3fe7686ddc517dbdb971fca600b0"
+        },
+        {
+          "os": "linux",
+          "arch": "arm64",
+          "downloadUrl": "https://github.com/OpenTestSolar/testtool-golang-ginkgo/archive/refs/tags/0.2.0.tar.gz",
+          "sha256": "c3350ad9dec59196fab707ff8660e4f5befe3fe7686ddc517dbdb971fca600b0"
+        },
+        {
+          "os": "darwin",
+          "arch": "amd64",
+          "downloadUrl": "https://github.com/OpenTestSolar/testtool-golang-ginkgo/archive/refs/tags/0.2.0.tar.gz",
+          "sha256": "c3350ad9dec59196fab707ff8660e4f5befe3fe7686ddc517dbdb971fca600b0"
+        },
+        {
+          "os": "darwin",
+          "arch": "arm64",
+          "downloadUrl": "https://github.com/OpenTestSolar/testtool-golang-ginkgo/archive/refs/tags/0.2.0.tar.gz",
+          "sha256": "c3350ad9dec59196fab707ff8660e4f5befe3fe7686ddc517dbdb971fca600b0"
+        }
+      ]
+    }
   ]
 }
