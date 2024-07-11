@@ -7,7 +7,7 @@ on:
     branches: [ "main" ]
 
 jobs:
-  pytest-build:
+  validate-meta-json:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
