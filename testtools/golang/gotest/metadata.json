@@ -1,5 +1,151 @@
 {
   "metaVersion": "1",
   "versions": [
+    {
+      "meta": {
+        "schemaVersion": 1.0,
+        "name": "gotest",
+        "nameZh": "Gotest自动化测试工具",
+        "legacyName": "",
+        "description": "Gotest自动化测试工具",
+        "version": "0.2.0",
+        "lang": "golang",
+        "defaultBaseImage": "golang:1.22",
+        "langType": "COMPILED",
+        "homePage": "https://github.com/OpenTestSolar/testtool-golang-gotest",
+        "versionFile": "https://testsolar-1321258242.cos.ap-guangzhou.myqcloud.com/testtools/golang/gotest/metadata.json",
+        "indexFile": "https://testsolar-1321258242.cos.ap-guangzhou.myqcloud.com/testtools/stable.index.json",
+        "scaffoldRepo": "https://github.com/OpenTestSolar/testtool-scaffold-gotest",
+        "supportOS": [
+          "windows",
+          "linux",
+          "darwin"
+        ],
+        "supportArch": [
+          "amd64",
+          "arm64"
+        ],
+        "entry": {
+          "load": "solar-gotest discover -p $1",
+          "run": "solar-gotest execute -p $1"
+        },
+        "repository": "https://github.com/OpenTestSolar/testtool-golang-gotest",
+        "gitPkgUrl": "github.com/OpenTestSolar/testtool-golang-gotest@master:gotest",
+        "httpPkgUrl": "https://testsolar-1321258242.cos.ap-guangzhou.myqcloud.com/testtools/golang/gotest/metadata.json@stable",
+        "certified": false,
+        "testCatalog": "unit"
+      },
+      "target": [
+        {
+          "os": "windows",
+          "arch": "amd64",
+          "downloadUrl": "https://github.com/OpenTestSolar/testtool-golang-gotest/archive/refs/tags/0.2.0.tar.gz",
+          "sha256": "6fff709dd7f00574ea4e96d50e4ce24289aebe607b5aaf56cf5d9c1efca029c4"
+        },
+        {
+          "os": "windows",
+          "arch": "arm64",
+          "downloadUrl": "https://github.com/OpenTestSolar/testtool-golang-gotest/archive/refs/tags/0.2.0.tar.gz",
+          "sha256": "6fff709dd7f00574ea4e96d50e4ce24289aebe607b5aaf56cf5d9c1efca029c4"
+        },
+        {
+          "os": "linux",
+          "arch": "amd64",
+          "downloadUrl": "https://github.com/OpenTestSolar/testtool-golang-gotest/archive/refs/tags/0.2.0.tar.gz",
+          "sha256": "6fff709dd7f00574ea4e96d50e4ce24289aebe607b5aaf56cf5d9c1efca029c4"
+        },
+        {
+          "os": "linux",
+          "arch": "arm64",
+          "downloadUrl": "https://github.com/OpenTestSolar/testtool-golang-gotest/archive/refs/tags/0.2.0.tar.gz",
+          "sha256": "6fff709dd7f00574ea4e96d50e4ce24289aebe607b5aaf56cf5d9c1efca029c4"
+        },
+        {
+          "os": "darwin",
+          "arch": "amd64",
+          "downloadUrl": "https://github.com/OpenTestSolar/testtool-golang-gotest/archive/refs/tags/0.2.0.tar.gz",
+          "sha256": "6fff709dd7f00574ea4e96d50e4ce24289aebe607b5aaf56cf5d9c1efca029c4"
+        },
+        {
+          "os": "darwin",
+          "arch": "arm64",
+          "downloadUrl": "https://github.com/OpenTestSolar/testtool-golang-gotest/archive/refs/tags/0.2.0.tar.gz",
+          "sha256": "6fff709dd7f00574ea4e96d50e4ce24289aebe607b5aaf56cf5d9c1efca029c4"
+        }
+      ]
+    },
+    {
+      "meta": {
+        "schemaVersion": 1.0,
+        "name": "gotest",
+        "nameZh": "Gotest自动化测试工具",
+        "legacyName": "",
+        "description": "Gotest自动化测试工具",
+        "version": "stable",
+        "lang": "golang",
+        "defaultBaseImage": "golang:1.22",
+        "langType": "COMPILED",
+        "homePage": "https://github.com/OpenTestSolar/testtool-golang-gotest",
+        "versionFile": "https://testsolar-1321258242.cos.ap-guangzhou.myqcloud.com/testtools/golang/gotest/metadata.json",
+        "indexFile": "https://testsolar-1321258242.cos.ap-guangzhou.myqcloud.com/testtools/stable.index.json",
+        "scaffoldRepo": "https://github.com/OpenTestSolar/testtool-scaffold-gotest",
+        "supportOS": [
+          "windows",
+          "linux",
+          "darwin"
+        ],
+        "supportArch": [
+          "amd64",
+          "arm64"
+        ],
+        "entry": {
+          "load": "solar-gotest discover -p $1",
+          "run": "solar-gotest execute -p $1"
+        },
+        "repository": "https://github.com/OpenTestSolar/testtool-golang-gotest",
+        "gitPkgUrl": "github.com/OpenTestSolar/testtool-golang-gotest@master:gotest",
+        "httpPkgUrl": "https://testsolar-1321258242.cos.ap-guangzhou.myqcloud.com/testtools/golang/gotest/metadata.json@stable",
+        "certified": false,
+        "testCatalog": "unit"
+      },
+      "target": [
+        {
+          "os": "windows",
+          "arch": "amd64",
+          "downloadUrl": "https://github.com/OpenTestSolar/testtool-golang-gotest/archive/refs/tags/0.2.0.tar.gz",
+          "sha256": "6fff709dd7f00574ea4e96d50e4ce24289aebe607b5aaf56cf5d9c1efca029c4"
+        },
+        {
+          "os": "windows",
+          "arch": "arm64",
+          "downloadUrl": "https://github.com/OpenTestSolar/testtool-golang-gotest/archive/refs/tags/0.2.0.tar.gz",
+          "sha256": "6fff709dd7f00574ea4e96d50e4ce24289aebe607b5aaf56cf5d9c1efca029c4"
+        },
+        {
+          "os": "linux",
+          "arch": "amd64",
+          "downloadUrl": "https://github.com/OpenTestSolar/testtool-golang-gotest/archive/refs/tags/0.2.0.tar.gz",
+          "sha256": "6fff709dd7f00574ea4e96d50e4ce24289aebe607b5aaf56cf5d9c1efca029c4"
+        },
+        {
+          "os": "linux",
+          "arch": "arm64",
+          "downloadUrl": "https://github.com/OpenTestSolar/testtool-golang-gotest/archive/refs/tags/0.2.0.tar.gz",
+          "sha256": "6fff709dd7f00574ea4e96d50e4ce24289aebe607b5aaf56cf5d9c1efca029c4"
+        },
+        {
+          "os": "darwin",
+          "arch": "amd64",
+          "downloadUrl": "https://github.com/OpenTestSolar/testtool-golang-gotest/archive/refs/tags/0.2.0.tar.gz",
+          "sha256": "6fff709dd7f00574ea4e96d50e4ce24289aebe607b5aaf56cf5d9c1efca029c4"
+        },
+        {
+          "os": "darwin",
+          "arch": "arm64",
+          "downloadUrl": "https://github.com/OpenTestSolar/testtool-golang-gotest/archive/refs/tags/0.2.0.tar.gz",
+          "sha256": "6fff709dd7f00574ea4e96d50e4ce24289aebe607b5aaf56cf5d9c1efca029c4"
+        }
+      ]
+    }
   ]
 }
