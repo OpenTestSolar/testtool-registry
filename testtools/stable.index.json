@@ -7,18 +7,11 @@
       "nameZh": "pytest自动化测试",
       "legacyName": "",
       "description": "pytest是一个成熟的全功能Python测试工具，可以帮助您编写更好的程序。此测试工具允许您在TestSolar上运行pytest。",
-      "version": "0.1.15",
+      "version": "0.1.17",
       "lang": "python",
       "defaultBaseImage": "python:3.10",
       "langType": "INTERPRETED",
       "parameterDefs": [
-        {
-          "name": "workerCount",
-          "value": "并发数",
-          "desc": "用例并发数量",
-          "default": "0",
-          "inputWidget": "text"
-        },
         {
           "name": "extraArgs",
           "value": "额外命令行参数",
@@ -28,17 +21,19 @@
         },
         {
           "name": "enableAllure",
-          "value": "是否用allure生成报告",
-          "desc": "是否用allure生成报告",
+          "value": "是否用Allure生成报告",
+          "desc": "是否用[Allure](https://allurereport.org/docs/pytest/)生成报告。\n\n> 注意： \n> 1. 开启此开关后，报告数据仅来源于Allure生成的json文件。\n> 2. 用户需要自己安装Pytest的[allure插件](https://pypi.org/project/allure-pytest/)。",
           "default": "false",
           "choices": [
             {
               "value": "true",
-              "desc": "是"
+              "displayName": "是",
+              "desc": "使用Allure生成报告"
             },
             {
               "value": "false",
-              "desc": "否"
+              "displayName": "否",
+              "desc": "不使用Allure生成报告"
             }
           ],
           "inputWidget": "choices"
@@ -217,10 +212,12 @@
           "choices": [
             {
               "value": "true",
+              "displayName": "",
               "desc": "是"
             },
             {
               "value": "false",
+              "displayName": "",
               "desc": "否"
             }
           ],
@@ -234,10 +231,12 @@
           "choices": [
             {
               "value": "true",
+              "displayName": "",
               "desc": "是"
             },
             {
               "value": "false",
+              "displayName": "",
               "desc": "否"
             }
           ],
@@ -251,10 +250,12 @@
           "choices": [
             {
               "value": "true",
+              "displayName": "",
               "desc": "是"
             },
             {
               "value": "false",
+              "displayName": "",
               "desc": "否"
             }
           ],
@@ -268,10 +269,12 @@
           "choices": [
             {
               "value": "true",
+              "displayName": "",
               "desc": "是"
             },
             {
               "value": "false",
+              "displayName": "",
               "desc": "否"
             }
           ],
@@ -285,10 +288,12 @@
           "choices": [
             {
               "value": "true",
+              "displayName": "",
               "desc": "是"
             },
             {
               "value": "false",
+              "displayName": "",
               "desc": "否"
             }
           ],
