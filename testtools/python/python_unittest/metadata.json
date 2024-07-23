@@ -104,14 +104,71 @@
         {
           "os": "linux",
           "arch": "amd64",
-          "downloadUrl": "https://github.com/OpenTestSolar/testtool-python-unittest/archive/refs/tags/0.2.5.tar.gz",
-          "sha256": "75a5bb3ee9e0d15a17d6a13663d5d309889bc9e24260340d23d2f1bf9b0d2499"
+          "downloadUrl": "https://github.com/OpenTestSolar/testtool-python-unittest/archive/refs/tags/0.2.6.tar.gz",
+          "sha256": "ccc33b0b600467bc4e17be39c4b6400830baca9dc767caf27c504dc911b76ad2"
         },
         {
           "os": "linux",
           "arch": "arm64",
-          "downloadUrl": "https://github.com/OpenTestSolar/testtool-python-unittest/archive/refs/tags/0.2.5.tar.gz",
-          "sha256": "75a5bb3ee9e0d15a17d6a13663d5d309889bc9e24260340d23d2f1bf9b0d2499"
+          "downloadUrl": "https://github.com/OpenTestSolar/testtool-python-unittest/archive/refs/tags/0.2.6.tar.gz",
+          "sha256": "ccc33b0b600467bc4e17be39c4b6400830baca9dc767caf27c504dc911b76ad2"
+        }
+      ]
+    },
+    {
+      "meta": {
+        "schemaVersion": 1.0,
+        "name": "python_unittest",
+        "nameZh": "python_unittest测试工具",
+        "legacyName": "",
+        "description": "python_unittest自动化测试工具",
+        "version": "0.2.6",
+        "lang": "python",
+        "defaultBaseImage": "mirrors.tencent.com/testsolar-base/python:3.9",
+        "langType": "INTERPRETED",
+        "parameterDefs": [
+          {
+            "name": "sample_param",
+            "value": "参数例子",
+            "desc": "代码类型参数例子",
+            "default": "# place your extra bash command here",
+            "lang": "bash",
+            "inputWidget": "code"
+          }
+        ],
+        "homePage": "https://github.com/OpenTestSolar/testtool-python-unittest",
+        "versionFile": "https://testsolar-1321258242.cos.ap-guangzhou.myqcloud.com/testtools/python/python_unittest/metadata.json",
+        "indexFile": "https://testsolar-1321258242.cos.ap-guangzhou.myqcloud.com/testtools/stable.index.json",
+        "scaffoldRepo": "https://github.com/OpenTestSolar/testtool-python-unittest",
+        "supportOS": [
+          "linux"
+        ],
+        "supportArch": [
+          "amd64",
+          "arm64"
+        ],
+        "entry": {
+          "load": "python3 /testtools/python_unittest/src/load.py $1",
+          "run": "python3 /testtools/python_unittest/src/run.py $1"
+        },
+        "repository": "https://github.com/OpenTestSolar/testtool-python-unittest",
+        "gitPkgUrl": "https://github.com/OpenTestSolar/testtool-python-unittest.git",
+        "httpPkgUrl": "https://testsolar-1321258242.cos.ap-guangzhou.myqcloud.com/testtools/python/unittest/metadata.json@stable",
+        "certified": false,
+        "testCatalog": "unit"
+      },
+      "target": [
+        {
+          "os": "linux",
+          "arch": "amd64",
+          "downloadUrl": "https://github.com/OpenTestSolar/testtool-python-unittest/archive/refs/tags/0.2.6.tar.gz",
+          "sha256": "ccc33b0b600467bc4e17be39c4b6400830baca9dc767caf27c504dc911b76ad2"
+        },
+        {
+          "os": "linux",
+          "arch": "arm64",
+          "downloadUrl": "https://github.com/OpenTestSolar/testtool-python-unittest/archive/refs/tags/0.2.6.tar.gz",
+          "sha256": "ccc33b0b600467bc4e17be39c4b6400830baca9dc767caf27c504dc911b76ad2"
         }
       ]
     }
