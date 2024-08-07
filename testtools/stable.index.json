@@ -7,7 +7,7 @@
       "nameZh": "pytest自动化测试",
       "legacyName": "",
       "description": "pytest是一个成熟的全功能Python测试工具，可以帮助您编写更好的程序。此测试工具允许您在TestSolar上运行pytest。",
-      "version": "0.1.20",
+      "version": "0.1.26",
       "lang": "python",
       "defaultBaseImage": "python:3.10",
       "langType": "INTERPRETED",
