@@ -7,7 +7,7 @@
       "nameZh": "pytest自动化测试",
       "legacyName": "",
       "description": "pytest是一个成熟的全功能Python测试工具，可以帮助您编写更好的程序。此测试工具允许您在TestSolar上运行pytest。",
-      "version": "0.1.28",
+      "version": "0.1.36",
       "lang": "python",
       "defaultBaseImage": "python:3.10",
       "langType": "INTERPRETED",
@@ -37,6 +37,20 @@
             }
           ],
           "inputWidget": "choices"
+        },
+        {
+          "name": "enableCoverage",
+          "value": "是否生成覆盖率报告",
+          "desc": "是否生成覆盖率报告。\n\n> 注意：\n> 1. 开启此开关后，会采集覆盖率，并在报告中的覆盖率TAB页展示。",
+          "default": "false",
+          "inputWidget": "switch"
+        },
+        {
+          "name": "coverageCodePackages",
+          "value": "覆盖率采集包名",
+          "desc": "**覆盖率采集包名**\n\n用于指定在代码覆盖率报告中需要保留的包名列表，多个包名用 `;` 分隔，填写相对路径。\n\n**示例**:\n```\n环境变量名称: TESTSOLAR_TTP_COVERAGECODEPACKAGES\n环境变量值: my_package;another_package\n```",
+          "default": "",
+          "inputWidget": "text"
         }
       ],
       "homePage": "https://github.com/OpenTestSolar/testtool-python-pytest",
