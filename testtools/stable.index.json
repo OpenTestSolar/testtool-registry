@@ -7,7 +7,7 @@
       "nameZh": "pytest自动化测试",
       "legacyName": "",
       "description": "pytest是一个成熟的全功能Python测试工具，可以帮助您编写更好的程序。此测试工具允许您在TestSolar上运行pytest。",
-      "version": "0.1.37",
+      "version": "0.1.43",
       "lang": "python",
       "defaultBaseImage": "python:3.10",
       "langType": "INTERPRETED",
@@ -51,6 +51,13 @@
           "desc": "**覆盖率采集包名**\n\n用于指定在代码覆盖率报告中需要保留的包名列表，多个包名用 `;` 分隔，填写相对路径。\n\n**示例**:\n```\n环境变量名称: TESTSOLAR_TTP_COVERAGECODEPACKAGES\n环境变量值: my_package;another_package\n```",
           "default": "",
           "inputWidget": "text"
+        },
+        {
+          "name": "ignoreEncodeBackSlash",
+          "value": "是否避免编码数据驱动中的反斜杠字符",
+          "desc": "默认情况下插件会基于`datadrive.encode(\"unicode_escape\").decode()`来对用例的数据驱动进行编码\n某些情况下用例数据驱动中可能会包含反斜杠，在编码后可能会导致pytest无法找到对应用例\n通过开启该选项可以避免对反斜杠进行编码",
+          "default": "false",
+          "inputWidget": "switch"
         }
       ],
       "homePage": "https://github.com/OpenTestSolar/testtool-python-pytest",
