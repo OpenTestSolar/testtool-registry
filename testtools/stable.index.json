@@ -343,7 +343,7 @@
       "nameZh": "python_unittest测试工具",
       "legacyName": "",
       "description": "python_unittest自动化测试工具",
-      "version": "0.2.12",
+      "version": "0.2.13",
       "lang": "python",
       "defaultBaseImage": "mirrors.tencent.com/testsolar-base/python:3.9",
       "langType": "INTERPRETED",
@@ -366,6 +366,13 @@
             }
           ],
           "inputWidget": "choices"
+        },
+        {
+          "name": "targetCaseModule",
+          "value": "用例模块",
+          "desc": "用于配置代码仓库下用例所在模块\n例如代码仓库下若存在 tests 以及 common 两个目录，则当该参数指定为 tests 时\n同步用例阶段仅会加载 tests 目录下的用例，跳过 common 目录，提高用例加载效率\n该参数允许指定多个，通过逗号分隔，例如 tests_a,tests_b",
+          "default": "",
+          "inputWidget": "text"
         }
       ],
       "homePage": "https://github.com/OpenTestSolar/testtool-python-unittest",

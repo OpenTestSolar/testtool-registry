@@ -88,6 +88,13 @@
               }
             ],
             "inputWidget": "choices"
+          },
+          {
+            "name": "targetCaseModule",
+            "value": "用例模块",
+            "desc": "用于配置代码仓库下用例所在模块\n例如代码仓库下若存在 tests 以及 common 两个目录，则当该参数指定为 tests 时\n同步用例阶段仅会加载 tests 目录下的用例，跳过 common 目录，提高用例加载效率\n该参数允许指定多个，通过逗号分隔，例如 tests_a,tests_b",
+            "default": "",
+            "inputWidget": "text"
           }
         ],
         "homePage": "https://github.com/OpenTestSolar/testtool-python-unittest",
@@ -115,14 +122,14 @@
         {
           "os": "linux",
           "arch": "amd64",
-          "downloadUrl": "https://github.com/OpenTestSolar/testtool-python-unittest/archive/refs/tags/0.2.12.tar.gz",
-          "sha256": "4f8df043f9cc7484b20673680fd2dc909913e9f6f1324ee877365d804291b9d3"
+          "downloadUrl": "https://github.com/OpenTestSolar/testtool-python-unittest/archive/refs/tags/0.2.13.tar.gz",
+          "sha256": "20f03752d12a2e527cb612e70fc52ae1966bf76fd6b471d84ed2fa5b570a5434"
         },
         {
           "os": "linux",
           "arch": "arm64",
-          "downloadUrl": "https://github.com/OpenTestSolar/testtool-python-unittest/archive/refs/tags/0.2.12.tar.gz",
-          "sha256": "4f8df043f9cc7484b20673680fd2dc909913e9f6f1324ee877365d804291b9d3"
+          "downloadUrl": "https://github.com/OpenTestSolar/testtool-python-unittest/archive/refs/tags/0.2.13.tar.gz",
+          "sha256": "20f03752d12a2e527cb612e70fc52ae1966bf76fd6b471d84ed2fa5b570a5434"
         }
       ]
     },
@@ -305,6 +312,81 @@
           "arch": "arm64",
           "downloadUrl": "https://github.com/OpenTestSolar/testtool-python-unittest/archive/refs/tags/0.2.12.tar.gz",
           "sha256": "4f8df043f9cc7484b20673680fd2dc909913e9f6f1324ee877365d804291b9d3"
+        }
+      ]
+    },
+    {
+      "meta": {
+        "schemaVersion": 1.0,
+        "name": "python_unittest",
+        "nameZh": "python_unittest测试工具",
+        "legacyName": "",
+        "description": "python_unittest自动化测试工具",
+        "version": "0.2.13",
+        "lang": "python",
+        "defaultBaseImage": "mirrors.tencent.com/testsolar-base/python:3.9",
+        "langType": "INTERPRETED",
+        "parameterDefs": [
+          {
+            "name": "enableCoverage",
+            "value": "是否开启覆盖率统计",
+            "desc": "采集代码覆盖率信息并上报。",
+            "default": "true",
+            "choices": [
+              {
+                "value": "true",
+                "displayName": "是",
+                "desc": "开启代码覆盖率采集"
+              },
+              {
+                "value": "false",
+                "displayName": "否",
+                "desc": "不开启代码覆盖率采集"
+              }
+            ],
+            "inputWidget": "choices"
+          },
+          {
+            "name": "targetCaseModule",
+            "value": "用例模块",
+            "desc": "用于配置代码仓库下用例所在模块\n例如代码仓库下若存在 tests 以及 common 两个目录，则当该参数指定为 tests 时\n同步用例阶段仅会加载 tests 目录下的用例，跳过 common 目录，提高用例加载效率\n该参数允许指定多个，通过逗号分隔，例如 tests_a,tests_b",
+            "default": "",
+            "inputWidget": "text"
+          }
+        ],
+        "homePage": "https://github.com/OpenTestSolar/testtool-python-unittest",
+        "versionFile": "https://testsolar-1321258242.cos.ap-guangzhou.myqcloud.com/testtools/python/python_unittest/metadata.json",
+        "indexFile": "https://testsolar-1321258242.cos.ap-guangzhou.myqcloud.com/testtools/stable.index.json",
+        "scaffoldRepo": "https://github.com/OpenTestSolar/testtool-python-unittest",
+        "supportOS": [
+          "linux"
+        ],
+        "supportArch": [
+          "amd64",
+          "arm64"
+        ],
+        "entry": {
+          "load": "python3 /testtools/python_unittest/src/load.py $1",
+          "run": "python3 /testtools/python_unittest/src/run.py $1"
+        },
+        "repository": "https://github.com/OpenTestSolar/testtool-python-unittest",
+        "gitPkgUrl": "https://github.com/OpenTestSolar/testtool-python-unittest.git",
+        "httpPkgUrl": "https://testsolar-1321258242.cos.ap-guangzhou.myqcloud.com/testtools/python/unittest/metadata.json@stable",
+        "certified": false,
+        "testCatalog": "unit"
+      },
+      "target": [
+        {
+          "os": "linux",
+          "arch": "amd64",
+          "downloadUrl": "https://github.com/OpenTestSolar/testtool-python-unittest/archive/refs/tags/0.2.13.tar.gz",
+          "sha256": "20f03752d12a2e527cb612e70fc52ae1966bf76fd6b471d84ed2fa5b570a5434"
+        },
+        {
+          "os": "linux",
+          "arch": "arm64",
+          "downloadUrl": "https://github.com/OpenTestSolar/testtool-python-unittest/archive/refs/tags/0.2.13.tar.gz",
+          "sha256": "20f03752d12a2e527cb612e70fc52ae1966bf76fd6b471d84ed2fa5b570a5434"
         }
       ]
     }
