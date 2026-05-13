@@ -82,7 +82,7 @@
       "nameZh": "Playwright自动化测试",
       "legacyName": "",
       "description": "TestSolar Support For playwright",
-      "version": "0.2.0",
+      "version": "0.2.31",
       "lang": "javascript",
       "defaultBaseImage": "node:18",
       "langType": "INTERPRETED",
@@ -91,6 +91,65 @@
           "name": "extraArgs",
           "value": "playwright额外参数",
           "desc": "playwright命令行额外参数",
+          "default": "",
+          "inputWidget": "text"
+        },
+        {
+          "name": "testcase_prefix",
+          "value": "用例前缀",
+          "desc": "playwright用例前缀信息",
+          "default": "",
+          "inputWidget": "text"
+        },
+        {
+          "name": "relPath",
+          "value": "用例相对路径",
+          "desc": "playwright用例工程相对路径",
+          "default": "",
+          "inputWidget": "text"
+        },
+        {
+          "name": "trace",
+          "value": "是否开启trace日志",
+          "desc": "默认开启trace日志（除非设置为否）",
+          "default": "1",
+          "choices": [
+            {
+              "value": "1",
+              "displayName": "是",
+              "desc": "开启trace日志"
+            },
+            {
+              "value": "0",
+              "displayName": "否",
+              "desc": "不开启trace日志"
+            }
+          ],
+          "inputWidget": "choices"
+        },
+        {
+          "name": "envJsonFile",
+          "value": "是否使用环境变量输出JSON",
+          "desc": "默认使用环境变量方式输出JSON结果（除非设置为否）",
+          "default": "1",
+          "choices": [
+            {
+              "value": "1",
+              "displayName": "是",
+              "desc": "使用环境变量输出JSON"
+            },
+            {
+              "value": "0",
+              "displayName": "否",
+              "desc": "使用重定向输出JSON"
+            }
+          ],
+          "inputWidget": "choices"
+        },
+        {
+          "name": "workCounts",
+          "value": "工作进程数量",
+          "desc": "playwright会根据设置的数量来并发执行用例，为空则使用默认逻辑",
           "default": "",
           "inputWidget": "text"
         }
@@ -112,7 +171,7 @@
         "load": "node /testtools/playwright/src/load.js $1",
         "run": "node /testtools/playwright/src/run.js $1"
       },
-      "repository": "https://github.com/OpenTestSolar/testtool-javascript-playwright/tree/main/playwright",
+      "repository": "https://github.com/OpenTestSolar/testtool-javascript-playwright",
       "gitPkgUrl": "https://github.com/OpenTestSolar/testtool-javascript-playwright.git",
       "httpPkgUrl": "https://testsolar-1321258242.cos.ap-guangzhou.myqcloud.com/testtools/javascript/playwright/metadata.json@stable",
       "certified": false,
